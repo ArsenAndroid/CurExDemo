@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.CurEx" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_1a2e3e</item>
+        <item name="colorPrimaryVariant">@color/blue_000318</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/green_299617</item>
+        <item name="colorSecondaryVariant">@color/green_299617</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.CurEx.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CurEx.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

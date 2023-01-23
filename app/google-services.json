@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "919491252547",
+    "project_id": "bbb-curex-demo",
+    "storage_bucket": "bbb-curex-demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919491252547:android:e61c47b410dec4c31cdff6",
+        "android_client_info": {
+          "package_name": "am.gtest.curex.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919491252547-5tffentc25gb8m75hefbfohu1cvk9kln.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvaA5bHN-xE3RP7BDwsQmXYaSHXV1E5_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919491252547-5tffentc25gb8m75hefbfohu1cvk9kln.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
