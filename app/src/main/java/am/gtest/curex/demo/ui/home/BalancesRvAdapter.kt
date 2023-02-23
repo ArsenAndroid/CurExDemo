@@ -20,6 +20,8 @@ class BalancesRvAdapter : RecyclerView.Adapter<BalancesRvAdapter.ViewHolder>() {
 
     private val balances = mutableListOf<BalanceModel>()
 
+    var clickListener: ((String) -> Unit)? = null
+
     fun setBalances(balances: List<BalanceModel>) {
         this.balances.clear()
         this.balances.addAll(balances)
@@ -39,10 +41,14 @@ class BalancesRvAdapter : RecyclerView.Adapter<BalancesRvAdapter.ViewHolder>() {
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         val binding = holder.binding
-        val link = balances[position]
+        val balanceModel = balances[position]
 
-        binding.tvCurrency.text = link.currency
-        binding.tvBalance.text = link.balance.toString()
+        binding.tvCurrency.text = balanceModel.currency
+        binding.tvBalance.text = balanceModel.balance.toString()
+
+        holder.itemView.setOnClickListener {
+            clickListener?.invoke(balanceModel.currency)
+        }
 
         holder.itemView.setCustomMargins(ctx, position, itemCount, 32, 8, 32, 8, 8)
     }

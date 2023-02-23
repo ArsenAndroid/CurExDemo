@@ -15,6 +15,7 @@
     <string name="submit">Submit</string>
     <string name="eur">EUR</string>
     <string name="usd">USD</string>
+    <string name="history">History</string>
     <string name="please_select_selling_currency">Please select selling currency</string>
     <string name="selling_currency_not_available">The selected selling currency is not available for exchanges</string>
     <string name="please_select_receiving_currency">Please select receiving currency</string>
@@ -27,4 +28,6 @@
     <string name="please_select_different_currencies">Please select different currencies</string>
     <string name="currency_converted">Currency converted</string>
     <string name="exchange_result">You have converted %1$s %2$s to %3$s %4$s. Commission Fee - %5$s %6$s.</string>
+    <string name="transactions_history_for">Transactions history for %1$s</string>
+
 </resources>

@@ -23,10 +23,12 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.appcompat.app.AlertDialog
+import androidx.core.os.bundleOf
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.badge.ExperimentalBadgeUtils
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Job
@@ -136,6 +138,14 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         balancesRvAdapter = BalancesRvAdapter()
+
+        balancesRvAdapter.clickListener = {
+            val bundle = bundleOf(
+                MyGlobals.KEY_CURRENCY to it,
+            )
+            findNavController().navigate(R.id.action_nav_home_to_nav_history, bundle)
+        }
+
         binding.rvBalances.adapter = balancesRvAdapter
 
         viewLifecycleOwner.lifecycleScope.launch {
